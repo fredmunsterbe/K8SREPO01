@@ -1,0 +1,7 @@
+apiVersion: pksapi.io/v1beta1
+kind: ClusterLogSink
+metadata:
+   name: clsinkwebhook
+spec:
+   type: webhook
+   URL: https://example.com

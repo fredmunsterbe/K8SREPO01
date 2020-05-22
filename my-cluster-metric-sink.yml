@@ -1,0 +1,13 @@
+apiVersion: pksapi.io/v1beta1
+kind: ClusterMetricSink
+metadata:
+  name: http2
+spec:
+  inputs:
+  - monitor_kubernetes_pods: true
+    type: prometheus
+  outputs:
+  - type: http
+    url: https:example.com
+    method: POST
+    data_format: json

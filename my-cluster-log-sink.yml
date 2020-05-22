@@ -1,0 +1,9 @@
+apiVersion: pksapi.io/v1beta1
+kind: ClusterLogSink
+metadata:
+   name: clsink01
+spec:
+   type: syslog
+   host: example.com
+   port: 443
+   enable_tls: true

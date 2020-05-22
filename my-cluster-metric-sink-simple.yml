@@ -1,0 +1,11 @@
+apiVersion: pksapi.io/v1beta1
+kind: ClusterMetricSink
+metadata:
+  name: http
+spec:
+  inputs:
+  outputs:
+  - type: http
+    url: https:example.com
+    method: POST
+    data_format: json

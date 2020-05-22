@@ -1,0 +1,12 @@
+apiVersion: pksapi.io/v1beta1
+kind: ClusterLogSink
+metadata:
+  name: sinkfluentdsplunk
+spec:
+  type: syslog
+  output_properties:
+    Host: example.com
+    Format: json
+    Port: 443
+    tls: on
+    tls.verify: off
